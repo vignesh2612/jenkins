@@ -3,7 +3,7 @@ agent any
 stages {
 stage ("gitcheckout")
 {
-steps{checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Ram230197/github.git']]])
+steps{checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/vignesh2612/jenkins.git']]])
 }
 }
 stage ("build using maven")
